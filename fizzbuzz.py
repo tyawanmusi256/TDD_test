@@ -19,6 +19,9 @@ class FizzBuzz:
     
     def test_input(self, n):
         # 入力値の例外処理ができているかどうか
+        if 0 <= n:
+            pass
+        assert self.ans == "-1"
         pass
 
     def test_fizz(self, n):
