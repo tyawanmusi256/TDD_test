@@ -44,6 +44,8 @@ class FizzBuzz:
 
     def test_num(self, n):
         # nが3,5の倍数でない場合にその値をそのまま出力できているか
+        if n%3 != 0 and n%5 != 0:
+            assert self.ans == str(n)
         pass
 
     def calc(self, n):
