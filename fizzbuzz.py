@@ -51,7 +51,9 @@ class FizzBuzz:
             pass
         if n%3==0 and n%5 != 0:
             self.ans = "fizz"
+            pass
         if n%3!=0 and n%5 == 0:
             self.ans = "buzz"
+            pass
         pass
 
