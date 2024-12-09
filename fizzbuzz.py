@@ -15,55 +15,55 @@
 class FizzBuzz:
     def __init__(self):
         self.ans = 0
-        pass
+        return
     
     def test_input(self, n):
         # 入力値の例外処理ができているかどうか
         if 0 <= n:
-            pass
+            return
         assert self.ans == "-1"
-        pass
+        return
 
     def test_fizz(self, n):
         # 3の倍数の場合にfizzを出力できているか
         if n%3 == 0 and n%5 != 0:
             assert self.ans == "fizz"
-        pass
+        return
 
     def test_buzz(self, n):
         # 5の倍数の場合にbuzzを出力できているか
         if n%3 != 0 and n%5 == 0:
             assert self.ans == "buzz"
-        pass
+        return
 
     def test_fizzbuzz(self, n):
         # 15の倍数の場合にfizzbuzzを出力できているか
         if n%3 == 0 and n%5 == 0:
             assert self.ans == "fizzbuzz"
-        pass
+        return
 
     def test_num(self, n):
         # nが3,5の倍数でない場合にその値をそのまま出力できているか
         if n%3 != 0 and n%5 != 0:
             assert self.ans == str(n)
-        pass
+        return
 
     def calc(self, n):
         # 入力値 n に対して出力する答え ans を計算する
         if n < 0:
             self.ans = "-1"
-            pass
+            return
         if n%3==0 and n%5 != 0:
             self.ans = "fizz"
-            pass
+            return
         if n%3!=0 and n%5 == 0:
             self.ans = "buzz"
-            pass
+            return
         if n%3==0 and n%5 == 0:
             self.ans = "fizzbuzz"
-            pass
+            return
         if n%3==0 and n%5 == 0:
             self.ans = str(n)
-            pass
-        pass
+            return
+        return
 
