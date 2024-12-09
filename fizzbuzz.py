@@ -32,6 +32,8 @@ class FizzBuzz:
 
     def test_buzz(self, n):
         # 5の倍数の場合にbuzzを出力できているか
+        if n%3 != 0 and n%5 == 0:
+            assert self.ans == "buzz"
         pass
 
     def test_fizzbuzz(self, n):
