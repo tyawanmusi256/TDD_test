@@ -46,5 +46,8 @@ class FizzBuzz:
         # 入力値 n に対して出力する答え ans を計算する
         if n < 0:
             self.ans = "-1"
+            pass
+        if n%3==0 and n%5 != 0:
+            self.ans = "fizz"
         pass
 
