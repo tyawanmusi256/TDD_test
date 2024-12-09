@@ -41,6 +41,8 @@ class FizzBuzz:
         pass
 
     def calc(self, n):
-        # 入力値 n に対して出力する答え ans を計算する    
+        # 入力値 n に対して出力する答え ans を計算する
+        if n < 0:
+            self.ans = "-1"
         pass
 
